@@ -62,9 +62,9 @@ class ConsoleRunner extends Component
     {
         $cmd = PHP_BINDIR . '/php ' . Yii::getAlias($this->file) . ' ' . $cmd;
         if ($this->isWindows() === true) {
-            pclose(popen('start /b ' . $cmd, 'r'));
+            proc_close(proc_open('start /b ' . $cmd, [], []));
         } else {
-            pclose(popen($cmd . ' > /dev/null &', 'r'));
+            proc_close(proc_open($cmd . ' > /dev/null &', [], []));
         }
         return true;
     }
