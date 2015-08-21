@@ -61,10 +61,12 @@ class ConsoleRunner extends Component
     public function run($cmd)
     {
         $cmd = PHP_BINDIR . '/php ' . Yii::getAlias($this->file) . ' ' . $cmd;
+        
+        $pipes = [];
         if ($this->isWindows() === true) {
-            proc_close(proc_open('start /b ' . $cmd, [], []));
+            proc_close(proc_open('start /b ' . $cmd, [], $pipes));
         } else {
-            proc_close(proc_open($cmd . ' > /dev/null &', [], []));
+            proc_close(proc_open($cmd . ' > /dev/null &', [], $pipes));
         }
         return true;
     }
