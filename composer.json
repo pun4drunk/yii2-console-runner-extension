@@ -1,19 +1,23 @@
 {
-    "name": "vova07/yii2-console-runner-extension",
+    "name": "pun4drunk/yii2-console-runner-extension",
     "description": "An extension for running console commands on background in Yii framework.",
     "keywords": ["yii2", "yii 2", "console", "runner", "commands", "background"],
-    "homepage": "https://github.com/vova07/yii2-console-runner-extension",
+    "homepage": "https://github.com/pun4drunk/yii2-console-runner-extension",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Crudu Vasile",
             "email": "bazillio07@yandex.ru"
-        }
+        },
+	{
+	    "name": "Vlad Waxme",
+	    "email": "vlad.waxme@gmail.com"
+	}
     ],
     "support": {
-        "issues": "https://github.com/vova07/yii2-console-runner-extension/issues?state=open",
-        "source": "https://github.com/vova07/yii2-console-runner-extension"
+        "issues": "https://github.com/pun4drunk/yii2-console-runner-extension/issues?state=open",
+        "source": "https://github.com/pun4drunk/yii2-console-runner-extension"
     },
     "require": {
         "yiisoft/yii2": "*"
